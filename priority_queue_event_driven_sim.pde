@@ -17,7 +17,7 @@ void draw() {
     background(255);
 
     for (int i = 0; i < numBalls; i++) {
-      balls[i].move(5);
+      balls[i].move(.1);
       balls[i].draw();
     }  
     frames++;
