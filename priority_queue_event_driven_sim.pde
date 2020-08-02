@@ -11,14 +11,16 @@ void setup() {
     balls[i] = new Ball(random(0, 1000), random(0, 1000));
   }
   
+  CollisionSystem system = new CollisionSystem(balls);
+  system.simulate(100);
 }
 
 void draw() {
     background(255);
 
-    for (int i = 0; i < numBalls; i++) {
-      balls[i].move(.1);
-      balls[i].draw();
-    }  
-    frames++;
+    //for (int i = 0; i < numBalls; i++) {
+    //  balls[i].move(2);
+    //  balls[i].draw();
+    //}  
+    //frames++;
 }
